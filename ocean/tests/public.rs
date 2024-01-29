@@ -515,7 +515,7 @@ fn part3_clans_get_largest_clan_id_second() {
 
 #[test]
 fn part3_beach_get_winner_clan_empty_beach() {
-    let beach = Beach::new();
+    let mut beach = Beach::new();
     assert!(beach.get_winner_clan(CLAN_1, CLAN_2).is_err())
 }
 
